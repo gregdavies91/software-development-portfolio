@@ -1,6 +1,5 @@
 <template>
   <ion-page>
-
     <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>About</ion-title>
@@ -16,7 +15,7 @@
     
       <div id="container">
         <strong>Greg Davies</strong>
-        <p>Software Developer with over 4+ years experience.  <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">View GitHub Profile</a></p>
+        <p>Software Developer <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">View GitHub Profile</a></p>
       </div>
     </ion-content>
   </ion-page>
