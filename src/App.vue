@@ -1,10 +1,6 @@
 <template>
 
     <header>
-
-      <ion-button slot='start'>
-        <ion-menu-button></ion-menu-button>
-      </ion-button>
       
     </header>
 
@@ -15,7 +11,6 @@
 </template>
 
 <script lang="ts">
-import { IonButton, IonMenuButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import Menu from './components/Menu.vue';
 
@@ -23,8 +18,6 @@ import Menu from './components/Menu.vue';
 export default defineComponent({
   name: 'App',
   components: {
-    IonButton,
-    IonMenuButton,
     Menu
   }
 })

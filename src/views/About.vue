@@ -3,7 +3,13 @@
 
     <ion-header :translucent="true">
       <ion-toolbar>
+
+        <ion-button color="dark" background="transparent" slot='start'>
+          <ion-menu-button color="dark"></ion-menu-button>
+        </ion-button>
+
         <ion-title>About</ion-title>
+
       </ion-toolbar>
     </ion-header>
     
@@ -13,14 +19,14 @@
         <strong>Greg Davies</strong>
         <p>Software Developer <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">View GitHub Profile</a></p>
       </div>
-      
+
     </ion-content>
 
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonMenuButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -30,7 +36,9 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonButton,
+    IonMenuButton
   }
 });
 </script>
