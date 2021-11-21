@@ -1,10 +1,17 @@
 <template>
 
-  <ion-menu type="overlay" side="start" menu-id="first" class="my-custom-menu" content-id="main">
+  <ion-menu side="start" menu-id="first" class="my-custom-menu" content-id="main" :style='{ width: menuWidth }'>
+
+    <span>
+        <ion-button color="dark" slot='start'>
+          <ion-menu-button color="dark"></ion-menu-button>
+        </ion-button>
+    </span>
+
     <ion-content>
       <ion-list>
-
-        <router-link class="link" to="/about">
+        <!-- Trying to get the @click to close the menu when a view is selected from the menu -->
+        <router-link class="link" to="/about" @click='menuController'>
           <ion-item>About</ion-item>
         </router-link>
         <router-link to="/experience">
@@ -27,8 +34,8 @@
 <ion-router-outlet id="main"></ion-router-outlet>
 </template>
 <style>
-.my-custom-menu {
-  --width: 500px;
+.hide {
+  display: none;
 }
 </style>
 
@@ -44,12 +51,15 @@ import {
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  components: {
+  props: {},
+  setup() {
+    return {
     IonContent, 
     IonItem, 
     IonList, 
     IonMenu, 
     IonRouterOutlet
+    }
   },
   methods: {
     openFirst() {

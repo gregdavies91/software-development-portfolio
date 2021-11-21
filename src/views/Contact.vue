@@ -3,7 +3,14 @@
 
     <ion-header :translucent="true">
       <ion-toolbar>
+
+<!--         This button has to be on all views, can it be in a component? -->
+        <ion-button color="dark" background="transparent" slot='start'>
+          <ion-menu-button color="dark"></ion-menu-button>
+        </ion-button>
+
         <ion-title>Contact</ion-title>
+        
       </ion-toolbar>
     </ion-header>
     
