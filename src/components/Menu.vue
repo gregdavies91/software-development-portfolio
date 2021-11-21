@@ -1,17 +1,10 @@
 <template>
 
-<!--   <header :class="{ 'scrolled-nav': scrolledPostition }"> -->
-
   <ion-menu type="overlay" side="start" menu-id="first" class="my-custom-menu" content-id="main">
-
-<!--     <div class="branding">
-      <img src="../assets/icon.png" alt="" />
-    </div>   -->
-
     <ion-content>
       <ion-list>
 
-        <router-link to="/about">
+        <router-link class="link" to="/about">
           <ion-item>About</ion-item>
         </router-link>
         <router-link to="/experience">
@@ -31,7 +24,6 @@
     </ion-content>
   </ion-menu>
 
-<!--   </header> -->
 <ion-router-outlet id="main"></ion-router-outlet>
 </template>
 <style>
