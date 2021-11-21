@@ -1,51 +1,38 @@
 <template>
+
+<!--   <header :class="{ 'scrolled-nav': scrolledPostition }"> -->
+
   <ion-menu type="overlay" side="start" menu-id="first" class="my-custom-menu" content-id="main">
+
+<!--     <div class="branding">
+      <img src="../assets/icon.png" alt="" />
+    </div>   -->
+
     <ion-content>
       <ion-list>
-        <ion-item>About</ion-item>
-        <ion-item>Experience</ion-item>
-        <ion-item>Projects</ion-item>
-        <ion-item>Resume</ion-item>
-        <ion-item>Contact</ion-item>
+
+        <router-link to="/about">
+          <ion-item>About</ion-item>
+        </router-link>
+        <router-link to="/experience">
+          <ion-item>Experience</ion-item>
+        </router-link>
+        <router-link to="/projects">
+          <ion-item>Projects</ion-item>
+        </router-link>
+        <router-link to="/resume">
+          <ion-item>Resume</ion-item>
+        </router-link>
+        <router-link to="/contact">
+          <ion-item>Contact</ion-item>
+        </router-link>
+
       </ion-list>
     </ion-content>
   </ion-menu>
 
-<!--   <ion-menu side="start" menu-id="custom" class="my-custom-menu" content-id="main">
-    <ion-header>
-      <ion-toolbar color="tertiary">
-        <ion-title>Custom Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-
-  <ion-menu side="end" type="push" content-id="main">
-    <ion-header>
-      <ion-toolbar color="danger">
-        <ion-title>End Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu> -->
-
-  <ion-router-outlet id="main"></ion-router-outlet>
+<!--   </header> -->
+<ion-router-outlet id="main"></ion-router-outlet>
 </template>
 <style>
 .my-custom-menu {
