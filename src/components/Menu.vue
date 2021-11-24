@@ -39,7 +39,7 @@
 }
 </style>
 
-<script>
+<script lang="ts">
 import { 
   IonContent, 
   IonItem, 

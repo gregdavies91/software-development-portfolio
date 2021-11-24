@@ -19,7 +19,12 @@
     
       <div id="container">
         <strong>Greg Davies</strong>
-        <p>Software Developer <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">View GitHub Profile</a></p>
+        <p>Software Developer</p>
+        <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">View GitHub Profile</a></p>
+        <Linkedin>
+        </Linkedin>
+
+              
       </div>
 
     </ion-content>
@@ -31,6 +36,7 @@
 // import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonMenuButton } from '@ionic/vue';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import Linkedin from '@/components/Linkedin.vue';
 
 export default defineComponent({
   name: 'Home',
@@ -40,6 +46,7 @@ export default defineComponent({
     IonPage,
     IonTitle,
     IonToolbar,
+    Linkedin
     // IonButton,
     // IonMenuButton
   }
