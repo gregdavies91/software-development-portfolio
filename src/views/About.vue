@@ -6,7 +6,7 @@
       <ion-toolbar>
 
 <!--   This button has to be on all views, can it be in a component? -->
-        <ion-button color="dark" slot='start'>
+        <ion-button fill="clear" slot='start'>
           <ion-menu-button color="dark"></ion-menu-button>
         </ion-button>
 

@@ -7,13 +7,8 @@ import Projects from '../views/Projects.vue';
 import Resume from '../views/Resume.vue';
 import Contact from '../views/Contact.vue';
 
-import unity from '../components/Unity.vue';
+// import unity from '../components/Unity.vue';
 
-const install = Vue => {
-  Vue.component('unity', unity)
-}
-
-unity.install = install
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -53,5 +48,3 @@ const router = createRouter({
 })
 
 export default router
-
-export default unity

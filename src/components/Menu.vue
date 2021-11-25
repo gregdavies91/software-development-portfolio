@@ -1,9 +1,9 @@
 <template>
 
-  <ion-menu side="start" menu-id="first" class="my-custom-menu" content-id="main" :style='{ width: menuWidth }'>
+  <ion-menu type="overlay" side="start" menu-id="first" class="my-custom-menu" content-id="main" :style='{ width: menuWidth }'>
 
     <span>
-        <ion-button color="dark" slot='start'>
+        <ion-button fill="clear" slot='start'>
           <ion-menu-button color="dark"></ion-menu-button>
         </ion-button>
     </span>
@@ -11,19 +11,19 @@
     <ion-content>
       <ion-list>
         <!-- Trying to get the @click to close the menu when a view is selected from the menu -->
-        <router-link class="link" to="/about" @click='menuController'>
+        <router-link class="link" to="/about" @click="closeMenu()">
           <ion-item>About</ion-item>
         </router-link>
-        <router-link to="/experience">
+        <router-link to="/experience" @click="closeMenu()">
           <ion-item>Experience</ion-item>
         </router-link>
-        <router-link to="/projects">
+        <router-link to="/projects" @click="closeMenu()">
           <ion-item>Projects</ion-item>
         </router-link>
-        <router-link to="/resume">
+        <router-link to="/resume" @click="closeMenu()">
           <ion-item>Resume</ion-item>
         </router-link>
-        <router-link to="/contact">
+        <router-link to="/contact" @click="closeMenu()">
           <ion-item>Contact</ion-item>
         </router-link>
 
@@ -72,6 +72,9 @@ export default defineComponent({
     openCustom() {
       menuController.enable(true, 'custom');
       menuController.open('custom');
+    },
+    closeMenu() {
+      menuController.close();
     }
   }
 });
