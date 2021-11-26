@@ -17,7 +17,8 @@
     <ion-content :fullscreen="true">
     
       <div id="container">
-
+        <Unity>
+        </Unity>
       </div>
 
     </ion-content>
@@ -28,6 +29,7 @@
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import Unity from '../components/Unity.vue';
 
 export default defineComponent({
   name: 'Home',
@@ -36,7 +38,8 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    Unity
   }
 });
 </script>
