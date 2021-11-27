@@ -2,15 +2,12 @@
   <ion-page>
 
 <ion-header>
-<!--     <ion-header :translucent="true"> -->
-      <ion-toolbar>
+      <ion-toolbar style="--background: transparent">
 
 <!--   This button has to be on all views, can it be in a component? -->
         <ion-button fill="clear" slot='start'>
           <ion-menu-button color="dark"></ion-menu-button>
         </ion-button>
-
-        <ion-title>About</ion-title>
 
       </ion-toolbar>
     </ion-header>
@@ -33,8 +30,7 @@
 </template>
 
 <script lang="ts">
-// import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonMenuButton } from '@ionic/vue';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import Linkedin from '@/components/Linkedin.vue';
 
@@ -44,7 +40,6 @@ export default defineComponent({
     IonContent,
     IonHeader,
     IonPage,
-    IonTitle,
     IonToolbar,
     Linkedin
     // IonButton,

@@ -1,15 +1,13 @@
 <template>
   <ion-page>
 
-    <ion-header :translucent="true">
-      <ion-toolbar>
+    <ion-header>
+      <ion-toolbar style="--background: transparent">
 
 <!--         This button has to be on all views, can it be in a component? -->
         <ion-button fill="clear" background="transparent" slot='start'>
           <ion-menu-button color="dark"></ion-menu-button>
         </ion-button>
-
-        <ion-title>Experience</ion-title>
         
       </ion-toolbar>
     </ion-header>
@@ -23,7 +21,7 @@
 
   </ion-page>
    <canvas id="unity-canvas" style="display: block;
-  position: absolute; width: 100%; height: 100%; background: #808080">
+  position: absolute; width: 100%; height: 100%; background: #000000">
         </canvas>
         
         <!-- <Unity>
