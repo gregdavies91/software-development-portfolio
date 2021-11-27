@@ -52,18 +52,18 @@ const sendMessage = (object, method, param) => {
 };
 
 onMounted(() => {
-  const file = 'BUILD_FILE';
+  const file = 'Experience';
   const script = document.createElement('script');
   script.onload = () => {
     /*global createUnityInstance, a*/
     createUnityInstance(document.querySelector('#unity-canvas'), {
-      dataUrl: `Build/${file}.data`,
-      frameworkUrl: `Build/${file}.framework.js`,
-      codeUrl: `Build/${file}.wasm`,
+      dataUrl: `Build/Experience.data.br`,
+      frameworkUrl: `Build/Experience.framework.js.br`,
+      codeUrl: `Build/Experience.wasm.br`,
       streamingAssetsUrl: 'StreamingAssets',
-      companyName: 'YOUR_COMPANY_NAME',
-      productName: 'YOUR_PRODUCT_NAME',
-      productVersion: 'YOUR_VERSION_NUMBER',
+      companyName: 'Leonids',
+      productName: "Game For Experience.vue of Greg Davies' Portfolio",
+      productVersion: '0.1',
       // matchWebGLToCanvasSize: false,
       // Uncomment above to separately control WebGL canvas render size and DOM element size.
       // devicePixelRatio: 1,
