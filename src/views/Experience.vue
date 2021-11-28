@@ -14,13 +14,9 @@
     
 
   </ion-page>
-<<<<<<< Updated upstream
-   <canvas id="unity-canvas" style="display: block;
-  position: absolute; width: 100%; height: 100%; background: #000000">
-=======
+
         
         <canvas id="unity-canvas" style="display: block; position: absolute; width: 100%; height: 100%; background: #000000">
->>>>>>> Stashed changes
         </canvas>
         
         <!-- <Unity>
@@ -51,24 +47,12 @@ const sendMessage = (object, method, param) => {
 };
 
 onMounted(() => {
-<<<<<<< Updated upstream
-  const file = 'BUILD_FILE';
-=======
+
   const file = 'Experience2';
->>>>>>> Stashed changes
   const script = document.createElement('script');
   script.onload = () => {
     /*global createUnityInstance, a*/
     createUnityInstance(document.querySelector('#unity-canvas'), {
-<<<<<<< Updated upstream
-      dataUrl: `Build/${file}.data`,
-      frameworkUrl: `Build/${file}.framework.js`,
-      codeUrl: `Build/${file}.wasm`,
-      streamingAssetsUrl: 'StreamingAssets',
-      companyName: 'YOUR_COMPANY_NAME',
-      productName: 'YOUR_PRODUCT_NAME',
-      productVersion: 'YOUR_VERSION_NUMBER',
-=======
       dataUrl: `Build/Experience2.data.br`,
       frameworkUrl: `Build/Experience2.framework.js.br`,
       codeUrl: `Build/Experience2.wasm.br`,
@@ -76,7 +60,6 @@ onMounted(() => {
       companyName: 'Leonids',
       productName: "Experience",
       productVersion: '0.2',
->>>>>>> Stashed changes
       // matchWebGLToCanvasSize: false,
       // Uncomment above to separately control WebGL canvas render size and DOM element size.
       // devicePixelRatio: 1,
@@ -88,11 +71,9 @@ onMounted(() => {
     });
   };
   script.async = true;
-<<<<<<< Updated upstream
-  script.src = `Build/${file}.loader.js`;
-=======
+
   script.src = `Build/Experience2.loader.js`;
->>>>>>> Stashed changes
+
   document.head.appendChild(script);
 });
 
