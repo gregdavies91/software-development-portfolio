@@ -21,8 +21,7 @@
     </ion-content>
 
   </ion-page>
-  <canvas id="unity-canvas" style="display: block;
-  position: absolute; width: 100%; height: 100%; background: #000000">
+          <canvas id="unity-canvas" style="display: block; position: absolute; width: 100%; height: 100%; background: #000000">
         </canvas>
 </template>
 

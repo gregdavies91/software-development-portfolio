@@ -5,8 +5,8 @@
       <ion-toolbar style="--background: transparent">
 
 <!--   This button has to be on all views, can it be in a component? -->
-        <ion-button fill="clear" slot='start'>
-          <ion-menu-button color="dark"></ion-menu-button>
+        <ion-button fill="clear" slot='start' style="--background-hover-opacity: 0%">
+          <ion-menu-button color="dark" style="--background-hover-opacity: 0%"></ion-menu-button>
         </ion-button>
 
       </ion-toolbar>
