@@ -18,9 +18,9 @@
         <strong>Greg Davies</strong>
         <p>Software Developer</p>
         <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">View GitHub Profile</a></p>
-        <Linkedin>
-        </Linkedin>
-
+        <p><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/gregdavies91?trk=profile-badge">View LinkedIn Profile</a></p>
+        <!-- <Linkedin>
+        </Linkedin> -->
               
       </div>
 
@@ -32,7 +32,7 @@
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import Linkedin from '@/components/Linkedin.vue';
+// import Linkedin from '@/components/Linkedin.vue';
 
 export default defineComponent({
   name: 'Home',
@@ -40,8 +40,8 @@ export default defineComponent({
     IonContent,
     IonHeader,
     IonPage,
-    IonToolbar,
-    Linkedin
+    IonToolbar
+    // Linkedin
     // IonButton,
     // IonMenuButton
   }
@@ -49,6 +49,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+ion-content {
+  font-family: Office Code Pro !important;
+  font-size: 1.2em;
+}
 #container {
   text-align: center;
   
