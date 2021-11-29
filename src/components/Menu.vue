@@ -9,7 +9,7 @@
     </span>
 
     <ion-content>
-      <ion-list lines="none" style="--ion-item-background: transparent;">
+      <ion-list inset="true" lines="none" style="--ion-item-background: transparent;">
         <!-- Trying to get the @click to close the menu when a view is selected from the menu -->
         <router-link to="/about" @click="closeMenu()">
           <ion-item>About</ion-item>
@@ -34,7 +34,12 @@
 <ion-router-outlet id="main"></ion-router-outlet>
 </template>
 
-<style>
+<style scoped>
+ion-item {
+  font-family: Office Code Pro !important;
+  font-size: 1.2em;
+}
+
 
 </style>
 
