@@ -35,9 +35,13 @@
 </template>
 
 <style scoped>
+a { 
+    text-decoration: none; 
+  }
 ion-item {
   font-family: Office Code Pro !important;
   font-size: 1.2em;
+
 }
 
 
