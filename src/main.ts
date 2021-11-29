@@ -22,6 +22,18 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/global.css';
+
+// Font Awesome
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+// library.add(faUserSecret)
+
+// Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+// Vue.config.productionTip = false
 
 const app = createApp(App)
   .use(IonicVue)
