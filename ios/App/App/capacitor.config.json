@@ -1,0 +1,6 @@
+{
+	"appId": "fun.simplistic.test",
+	"appName": "Greg Davies Portfolio",
+	"webDir": "public",
+	"bundledWebRuntime": false
+}
