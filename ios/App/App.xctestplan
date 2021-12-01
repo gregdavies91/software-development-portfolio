@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "28007615-2778-4BBF-8F14-1E439FC4FD0C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:App.xcodeproj",
+      "identifier" : "504EC3031FED79650016851F",
+      "name" : "App"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

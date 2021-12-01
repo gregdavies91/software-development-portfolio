@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'fun.simplistic.test',
-  appName: 'Greg Davies Portfolio',
+  appName: "Greg's Portfolio",
   webDir: 'public',
   bundledWebRuntime: false
 };
