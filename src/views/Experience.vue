@@ -11,8 +11,25 @@
         </ion-toolbar>
       </ion-header>
 
-    
-      <ion-grid style="--ion-grid-width-xs:              100%;
+    <ion-content>
+      <ion-list>
+        <DynamicScroller
+          class="scroller"
+          :items="list"
+          :item-size="56"
+        >
+          <template #default="{ item }">
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="../assets/images/landscape.png" />
+              </ion-avatar>
+              <ion-label>{{ item }}</ion-label>
+            </ion-item>
+          </template>
+        </DynamicScroller>
+      </ion-list>
+    </ion-content>
+      <!-- <ion-grid style="--ion-grid-width-xs:              100%;
 --ion-grid-width-sm:              540px;
 --ion-grid-width-md:              720px;
 --ion-grid-width-lg:              960px;
@@ -31,9 +48,9 @@
 --ion-grid-column-padding-md:     5px;
 --ion-grid-column-padding-lg:     5px;
 --ion-grid-column-padding-xl:     5px;">
-        <ion-row class="ion-justify-content-start">
+        <ion-row class="ion-justify-content-center">
           <ion-col size="12" size-sm>
-            <img src="../assets/images/landscape.png">
+              <img src="../assets/images/landscape.png">
           </ion-col>
           <ion-col size="12" size-sm>
             <img src="../assets/images/landscape.png">
@@ -45,7 +62,7 @@
             <img src="../assets/images/landscape.png">
           </ion-col>
         </ion-row>
-      </ion-grid>
+      </ion-grid> -->
     
 
   </ion-page>
@@ -83,14 +100,35 @@
 }
 </style>
 
-<script>
+<script lang="ts">
 
-import { IonHeader, IonPage, IonToolbar, IonCol, IonGrid, IonRow } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { 
+    IonHeader, 
+    IonPage, 
+    IonToolbar, 
+    IonAvatar,
+    IonContent,
+    IonItem,
+    IonLabel 
+} from '@ionic/vue';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   name: "Experience",
-  components: { IonHeader, IonPage, IonToolbar, IonCol, IonGrid, IonRow }
-});
+  components: { 
+    IonHeader, 
+    IonPage, 
+    IonToolbar, 
+    IonAvatar,
+    IonContent,
+    IonItem,
+    IonLabel 
+  },
+setup() {
+      const list = ref([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+      return { list }
+    }
+  });
 </script>
 

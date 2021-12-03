@@ -24,6 +24,12 @@ import '@ionic/vue/css/display.css';
 import './theme/variables.css';
 import './theme/global.css';
 
+// scroll module
+import VueVirtualScroller from 'vue3-virtual-scroller';
+import 'vue3-virtual-scroller/dist/vue3-virtual-scroller.css';
+import { DynamicScroller } from 'vue3-virtual-scroller';
+
+
 // Font Awesome
 // import { library } from '@fortawesome/fontawesome-svg-core';
 // import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
@@ -37,7 +43,9 @@ import './theme/global.css';
 
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .use(VueVirtualScroller)
+  .component('DynamicScroller', DynamicScroller);
   
 router.isReady().then(() => {
   app.mount('#app');
