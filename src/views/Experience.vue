@@ -11,17 +11,42 @@
         </ion-toolbar>
       </ion-header>
 
-      <ion-slides pager="true" :options="slideOpts">
-        <ion-slide>
-          <img src='../assets/images/landscape.png'>
-        </ion-slide>
-        <ion-slide>
-          <h1>Slide 2</h1>
-        </ion-slide>
-        <ion-slide>
-          <h1>Slide 3</h1>
-        </ion-slide>
-      </ion-slides>
+    
+      <ion-grid style="--ion-grid-width-xs:              100%;
+--ion-grid-width-sm:              540px;
+--ion-grid-width-md:              720px;
+--ion-grid-width-lg:              960px;
+--ion-grid-width-xl:              1140px; 
+--ion-grid-padding:               5px;
+
+--ion-grid-padding-xs:            5px;
+--ion-grid-padding-sm:            5px;
+--ion-grid-padding-md:            5px;
+--ion-grid-padding-lg:            5px;
+--ion-grid-padding-xl:            5px;
+--ion-grid-column-padding:        5px;
+
+--ion-grid-column-padding-xs:     5px;
+--ion-grid-column-padding-sm:     5px;
+--ion-grid-column-padding-md:     5px;
+--ion-grid-column-padding-lg:     5px;
+--ion-grid-column-padding-xl:     5px;">
+        <ion-row class="ion-justify-content-start">
+          <ion-col size="12" size-sm>
+            <img src="../assets/images/landscape.png">
+          </ion-col>
+          <ion-col size="12" size-sm>
+            <img src="../assets/images/landscape.png">
+          </ion-col>
+          <ion-col size="12" size-sm>
+            <img src="../assets/images/landscape.png">
+          </ion-col>
+          <ion-col size="12" size-sm>
+            <img src="../assets/images/landscape.png">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
 
   </ion-page>
       
@@ -29,28 +54,43 @@
 </template>
 
 <style>
-  #experience {
-    display:  flex;
-    position: center;
-  }
+  #container {
+  text-align: center;
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  
+  color: #8c8c8c;
+  
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
 </style>
 
 <script>
-import { IonHeader, IonPage, IonToolbar, IonSlides, IonSlide } from '@ionic/vue';
+
+import { IonHeader, IonPage, IonToolbar, IonCol, IonGrid, IonRow } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: "Experience",
-  components: { IonHeader, IonPage, IonToolbar, IonSlides, IonSlide },
-  setup() {
-    // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
-    const slideOpts = {
-      initialSlide: 1,
-      speed: 400
-    };
-
-    return { slideOpts }
-  }
+  components: { IonHeader, IonPage, IonToolbar, IonCol, IonGrid, IonRow }
 });
 </script>
 
