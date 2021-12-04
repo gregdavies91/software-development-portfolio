@@ -65,8 +65,12 @@
   }
 }
 
-.hidden { display: none; }
-.trigger:hover + .hidden { display: inline; }
+.hidden { 
+  display: none;
+}
+.trigger:hover + .hidden { 
+  display: inline; 
+}
 
 </style>
 
