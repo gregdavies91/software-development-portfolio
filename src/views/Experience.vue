@@ -18,16 +18,21 @@
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-sm>
-              <img src="../assets/images/landscape.png">
+            <div class="trigger">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"></a>
+            </div>
+            <div class="hidden">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png" style="opacity: 50%;"></a>
+            </div>
           </ion-col>
           <ion-col size="12" size-sm>
-            <img src="../assets/images/landscape.png">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"></a>
           </ion-col>
           <ion-col size="12" size-sm>
-            <img src="../assets/images/landscape.png">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"></a>
           </ion-col>
           <ion-col size="12" size-sm>
-            <img src="../assets/images/landscape.png">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"></a>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -59,6 +64,9 @@
   
   }
 }
+
+.hidden { display: none; }
+.trigger:hover + .hidden { display: inline; }
 
 </style>
 

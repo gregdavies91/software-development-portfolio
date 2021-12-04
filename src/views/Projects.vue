@@ -18,16 +18,16 @@
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-sm>
-              <img src="../assets/images/landscape.png">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"></a>   
           </ion-col>
           <ion-col size="12" size-sm>
-            <img src="../assets/images/landscape.png">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"></a>
           </ion-col>
           <ion-col size="12" size-sm>
-            <img src="../assets/images/landscape.png">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"></a>
           </ion-col>
           <ion-col size="12" size-sm>
-            <img src="../assets/images/landscape.png">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"></a>
           </ion-col>
         </ion-row>
       </ion-grid>
