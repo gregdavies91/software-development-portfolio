@@ -42,7 +42,7 @@
 <style scoped>
 
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   #container {
   text-align: center;
   
