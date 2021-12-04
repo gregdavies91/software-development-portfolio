@@ -11,68 +11,77 @@
         </ion-toolbar>
       </ion-header>
 
-    <div id="container">
+    <ion-content>
+      
+    
+      <div class="container" id="container">
       <ion-grid>
         <ion-row>
-          <ion-col>
+          <ion-col size="12" size-sm>
+              <img src="../assets/images/landscape.png">
+          </ion-col>
+          <ion-col size="12" size-sm>
             <img src="../assets/images/landscape.png">
           </ion-col>
-          <ion-col>
+          <ion-col size="12" size-sm>
             <img src="../assets/images/landscape.png">
           </ion-col>
-          <ion-col>
-            <img src="../assets/images/landscape.png">
-          </ion-col>
-          <ion-col>
+          <ion-col size="12" size-sm>
             <img src="../assets/images/landscape.png">
           </ion-col>
         </ion-row>
       </ion-grid>
     </div>
+    </ion-content>
 
   </ion-page>
       
   
 </template>
 
-<style>
+<style scoped>
+
+
+@media (max-width: 600px) {
   #container {
   text-align: center;
   
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 0;
   transform: translateY(-50%);
-}
+} 
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+  ion-grid {
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  position: fixed;
   
-  color: #8c8c8c;
-  
-  margin: 0;
+  }
 }
 
-#container a {
-  text-decoration: none;
-}
 </style>
 
-<script>
+<script lang="ts">
 
-import { IonHeader, IonPage, IonToolbar, IonCol, IonGrid, IonRow } from '@ionic/vue';
+import { 
+    IonHeader, 
+    IonPage, 
+    IonToolbar, 
+    IonContent
+} from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: "Projects",
-  components: { IonHeader, IonPage, IonToolbar, IonCol, IonGrid, IonRow }
+  components: { 
+    IonHeader, 
+    IonPage, 
+    IonToolbar, 
+    IonContent
+  }
 });
+
+      
 </script>
 
