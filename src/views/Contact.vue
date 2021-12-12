@@ -16,18 +16,17 @@
     
       <div id="container">
         
-        
-        <ion-input color="dark" placeholder="Your Name"></ion-input>  
+        <form>
+          <ion-input color="dark" placeholder="Your Name"></ion-input>  
 
-        
-        <ion-input color="dark" placeholder="Your Email"></ion-input>    
+          
+          <ion-input color="dark" placeholder="Your Email"></ion-input>    
 
-        
-        
+          
           <ion-textarea color="dark" placeholder="Please type your message here..."></ion-textarea>
-        
 
-      
+          <ion-button size="large" color="light">Submit</ion-button>
+        </form>
       </div>
 
     </ion-content>
