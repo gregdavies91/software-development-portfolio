@@ -15,7 +15,19 @@
     <ion-content :fullscreen="true">
     
       <div id="container">
- 
+        
+        
+        <ion-input color="dark" placeholder="Your Name"></ion-input>  
+
+        
+        <ion-input color="dark" placeholder="Your Email"></ion-input>    
+
+        
+        
+          <ion-textarea color="dark" placeholder="Please type your message here..."></ion-textarea>
+        
+
+      
       </div>
 
     </ion-content>
@@ -24,7 +36,7 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonLabel, IonInput, IonItem, IonTextarea } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -33,7 +45,9 @@ export default defineComponent({
     IonContent,
     IonHeader,
     IonPage,
-    IonToolbar
+    IonToolbar,
+    IonInput,
+    IonTextarea 
   }
 });
 </script>
