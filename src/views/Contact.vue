@@ -15,21 +15,24 @@
     <ion-content :fullscreen="true">
     
       <div id="container">
-        <h2>Contact Form</h2>
-        <p>Please use the form to send me a quick message and I'll get back to you</p>
+        <h2>Contact</h2>
+        <p>Please send me a message and I'll get back to you</p>
         <form>
           <ion-list>
+            
             <ion-item>
               <ion-label>Name: </ion-label> 
-              <ion-input color="dark" placeholder="Your Name"></ion-input>
-
+              <ion-input name="name" color="dark" placeholder="Enter your name..."></ion-input>
             </ion-item>
+            
             <ion-item>
               <ion-label>Email: </ion-label>
-              <ion-input color="dark" placeholder="Your Email"></ion-input>    
+              <ion-input name="email" color="dark" placeholder="Enter your email..."></ion-input>    
             </ion-item>
-          
-          <ion-textarea color="dark" placeholder="Please type your message here..."></ion-textarea>
+
+            <ion-item>
+              <ion-textarea name="message" color="dark" placeholder="Write your message here..."></ion-textarea>
+            </ion-item>
 
         </ion-list>
         
@@ -59,14 +62,14 @@ export default defineComponent({
     IonTextarea,
     IonItem,
     IonList 
-  }
+  },
   data() {
     return {
       name: '',
       email: '',
       message: '',
     }
-  }
+  },
 });
 </script>
 
