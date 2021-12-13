@@ -15,17 +15,26 @@
     <ion-content :fullscreen="true">
     
       <div id="container">
-        
+        <h2>Contact Form</h2>
+        <p>Please use the form to send me a quick message and I'll get back to you</p>
         <form>
-          <ion-input color="dark" placeholder="Your Name"></ion-input>  
+          <ion-list>
+            <ion-item>
+              <ion-label>Name: </ion-label> 
+              <ion-input color="dark" placeholder="Your Name"></ion-input>
 
-          
-          <ion-input color="dark" placeholder="Your Email"></ion-input>    
-
+            </ion-item>
+            <ion-item>
+              <ion-label>Email: </ion-label>
+              <ion-input color="dark" placeholder="Your Email"></ion-input>    
+            </ion-item>
           
           <ion-textarea color="dark" placeholder="Please type your message here..."></ion-textarea>
 
-          <ion-button size="large" color="light">Submit</ion-button>
+        </ion-list>
+        
+        <ion-button type="submit" expand="block" size="large" color="light">Submit</ion-button>
+        
         </form>
       </div>
 
@@ -35,7 +44,7 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar, IonLabel, IonInput, IonItem, IonTextarea } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonLabel, IonInput, IonTextarea, IonItem, IonList } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -45,8 +54,18 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonToolbar,
+    IonLabel,
     IonInput,
-    IonTextarea 
+    IonTextarea,
+    IonItem,
+    IonList 
+  }
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: '',
+    }
   }
 });
 </script>
