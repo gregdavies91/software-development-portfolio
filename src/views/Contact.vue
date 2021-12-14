@@ -21,16 +21,17 @@
           <ion-list>
             <ion-item>
               <ion-label>Name: </ion-label> 
-              <ion-input name="name" color="dark" placeholder="Enter your name..." v-model="name"></ion-input>
+              <ion-input name="name" color="dark" placeholder="Enter your name..." v-model="state.name"></ion-input>
             </ion-item>
             
             <ion-item>
               <ion-label>Email: </ion-label>
-              <ion-input name="email" color="dark" placeholder="Enter your email..." v-model="email"></ion-input>    
+              <ion-input name="email" color="dark" placeholder="Enter your email..." v-model="state.email"></ion-input>
+              <span v-if="v$.email.$error">{{ v$.email.$errors[0].$message }}</span>    
             </ion-item>
 
             <ion-item>
-              <ion-textarea name="message" color="dark" placeholder="Write your message here..." v-model="message"></ion-textarea>
+              <ion-textarea name="message" color="dark" placeholder="Write your message here..." v-model="state.message"></ion-textarea>
             </ion-item>
 
         </ion-list>
@@ -47,9 +48,9 @@
 
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonToolbar, IonLabel, IonInput, IonTextarea, IonItem, IonList } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { defineComponent, reactive, computed } from 'vue';
 import useValidate from '@vuelidate/core';
-import { required } from '@vuelidate/validators';
+import { required, email, minLength } from '@vuelidate/validators';
 
 export default defineComponent({
   name: 'Contact',
@@ -64,18 +65,24 @@ export default defineComponent({
     IonItem,
     IonList 
   },
-  data() {
-    return {
-      v$: useValidate(), 
+  setup() {
+    const state = reactive({
       name: '',
       email: '',
       message: '',
-    }
-  },
-  validations() {
+    })
+    const rules = computed(() => {
+      return {
+        name: { required, minLength: minLength(2) },
+        email: { required, email },
+      }
+    })
+
+    const v$ = useValidate(rules, state)
+
     return {
-      name: { required },
-      email: { required },
+      state,
+      v$
     }
   },
   methods: {
@@ -88,7 +95,7 @@ export default defineComponent({
         alert('Error! Please fill in all the required fields and click submit again.')
       }    
     }
-  },
+  }
   
 });
 </script>
