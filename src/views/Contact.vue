@@ -19,24 +19,23 @@
         <p>Please send me a message and I'll get back to you</p>
         <form>
           <ion-list>
-            
             <ion-item>
               <ion-label>Name: </ion-label> 
-              <ion-input name="name" color="dark" placeholder="Enter your name..."></ion-input>
+              <ion-input name="name" color="dark" placeholder="Enter your name..." v-model="name"></ion-input>
             </ion-item>
             
             <ion-item>
               <ion-label>Email: </ion-label>
-              <ion-input name="email" color="dark" placeholder="Enter your email..."></ion-input>    
+              <ion-input name="email" color="dark" placeholder="Enter your email..." v-model="email"></ion-input>    
             </ion-item>
 
             <ion-item>
-              <ion-textarea name="message" color="dark" placeholder="Write your message here..."></ion-textarea>
+              <ion-textarea name="message" color="dark" placeholder="Write your message here..." v-model="message"></ion-textarea>
             </ion-item>
 
         </ion-list>
         
-        <ion-button type="submit" expand="block" size="large" color="light">Submit</ion-button>
+        <ion-button @click="submitForm" type="submit" expand="block" size="large" color="light">Submit</ion-button>
         
         </form>
       </div>
@@ -49,6 +48,8 @@
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonToolbar, IonLabel, IonInput, IonTextarea, IonItem, IonList } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import useValidate from '@vuelidate/core';
+import { required } from '@vuelidate/validators';
 
 export default defineComponent({
   name: 'Contact',
@@ -65,11 +66,30 @@ export default defineComponent({
   },
   data() {
     return {
+      v$: useValidate(), 
       name: '',
       email: '',
       message: '',
     }
   },
+  validations() {
+    return {
+      name: { required },
+      email: { required },
+    }
+  },
+  methods: {
+    submitForm() {
+      this.v$.$validate()
+      if (!this.v$.$error) {
+        alert('Form sucessfully submitted. Thank you for your interest.')
+      }
+      else {
+        alert('Error! Please fill in all the required fields and click submit again.')
+      }    
+    }
+  },
+  
 });
 </script>
 
