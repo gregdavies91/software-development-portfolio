@@ -14,7 +14,7 @@
     
     <ion-content :fullscreen="true">
     
-      <div id="container">
+      <div id="formcontainer">
         <h2>Contact</h2>
         <p>Please send me a message and I'll get back to you</p>
         <form>
@@ -82,7 +82,7 @@ export default defineComponent({
     submitForm() {
       this.v$.$validate()
       if (!this.v$.$error) {
-        alert('Form sucessfully submitted. Thank you for your interest.')
+        alert('Form sucessfully submitted. I will get back to you shortly.')
       }
       else {
         alert('Error! Please fill in all the required fields and click submit again.')
@@ -93,23 +93,35 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-#container {
+<style>
+ion-content, ion-input, ion-label, ion-button, ion-textarea {
+  font-family: Office Code Pro !important;
+  font-size: 1.2em;
+}
+#formcontainer {
   text-align: center;
-  
+  margin: auto;
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  max-width: 600px;
 }
 
-#container strong {
+@media (max-width: 700px) {
+  #formcontainer {
+    left: 50px;
+    right:  50px;
+  }
+}
+
+#formcontainer strong {
   font-size: 20px;
   line-height: 26px;
 }
 
-#container p {
+#formcontainer p {
   font-size: 16px;
   line-height: 22px;
   
@@ -118,7 +130,7 @@ export default defineComponent({
   margin: 0;
 }
 
-#container a {
+#formcontainer a {
   text-decoration: none;
 }
 </style>
