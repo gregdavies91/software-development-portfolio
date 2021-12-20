@@ -19,23 +19,39 @@
         <ion-row>
           <ion-col size="12" size-sm>
             <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"><p>Face To The Light Ltd.</p></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"><img src="../assets/images/facetothelight.png"></a>
+            </div>
+            <div class="text">
+            <p style="color: white;">Face To The Light Ltd.</p>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
             <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"><p>Weengs Ltd.</p></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://weengs.co.uk"><img src="../assets/images/weengs.png"></a>
+            </div>
+            <div class="text">
+            <p style="color: white;">Weengs Ltd.</p>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
             <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"><p>Vallie Ltd.</p></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://techcrunch.com/2015/11/16/vallie-takes-the-luxe-valet-parking-model-and-puts-it-in-london/"><img src="../assets/images/vallie.png"></a>
+            </div>
+            <div class="text">
+            <p style="color: white;">Vallie Ltd.</p>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
             <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"><p>Unlimit Ltd.</p></a>
+              
+              <a target="_blank" rel="noopener noreferrer" href="https://unlimit.co.uk"><img src="../assets/images/unlimit.png"></a>
+              
             </div>
+            <div class="text">
+            <p style="color: white;">Unlimit Ltd.</p>
+          </div>
+            
+            
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -48,7 +64,6 @@
 </template>
 
 <style scoped>
-
 
 #container {
   padding-left: 200px;
@@ -84,18 +99,22 @@
   }
 }
 
-.trigger p {
+.trigger:hover + .text {
 
+  display:  none;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   visibility: hidden;
+
+  
 }
 
-.trigger:hover p {
+.trigger + .text {
   
+  opacity:  100%;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -105,15 +124,20 @@
   transition-property: visibility;
   transition-delay: 0.2s;
   transition-duration: 1s;
+  
+  
 }
 
+.trigger:hover { 
+  
+  opacity: 100%;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  
+}
 .trigger { 
   
-  
-}
-.trigger:hover { 
-
-  opacity: 50%;
+  opacity: 20%;
   transition-property: opacity;
   transition-duration: 0.5s;
   
