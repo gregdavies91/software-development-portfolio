@@ -1,108 +1,170 @@
 <template>
   <ion-page>
 
-    <ion-header>
-      <ion-toolbar style="--background: transparent">
+      <ion-header>
+        <ion-toolbar style="--background: transparent">
 
-<!--         This button has to be on all views, can it be in a component? -->
-        <ion-button fill="clear" background="transparent" slot='start'>
-          <ion-menu-button color="dark"></ion-menu-button>
-        </ion-button>
-        
-      </ion-toolbar>
-    </ion-header>
+          <ion-button fill="clear" background="transparent" slot='start'>
+            <ion-menu-button color="dark"></ion-menu-button>
+          </ion-button>
+          
+        </ion-toolbar>
+      </ion-header>
+
+    <ion-content>
+      
     
+      <div class="container" id="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-sm>
+            <div class="trigger">
+              <a target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"><img src="../assets/images/facetothelight.png"></a>
+            </div>
+            <div class="text">
+            <p style="color: white;">Face To The Light Ltd.</p>
+            </div>
+          </ion-col>
+          <ion-col size="12" size-sm>
+            <div class="trigger">
+              <a target="_blank" rel="noopener noreferrer" href="https://weengs.co.uk"><img src="../assets/images/weengs.png"></a>
+            </div>
+            <div class="text">
+            <p style="color: white;">Weengs Ltd.</p>
+            </div>
+          </ion-col>
+          <ion-col size="12" size-sm>
+            <div class="trigger">
+              <a target="_blank" rel="noopener noreferrer" href="https://techcrunch.com/2015/11/16/vallie-takes-the-luxe-valet-parking-model-and-puts-it-in-london/"><img src="../assets/images/vallie.png"></a>
+            </div>
+            <div class="text">
+            <p style="color: white;">Vallie Ltd.</p>
+            </div>
+          </ion-col>
+          <ion-col size="12" size-sm>
+            <div class="trigger">
+              
+              <a target="_blank" rel="noopener noreferrer" href="https://unlimit.co.uk"><img src="../assets/images/unlimit.png"></a>
+              
+            </div>
+            <div class="text">
+            <p style="color: white;">Unlimit Ltd.</p>
+          </div>
+            
+            
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    </ion-content>
 
   </ion-page>
-        
-        <canvas id="unity-canvas" style="display: block; position: absolute; width: 100%; height: 100%; background: #000000">
-        </canvas>
-        
-        <!-- <Unity>
-        </Unity> -->
+      
+  
 </template>
 
-<!-- <script lang="ts"> -->
-<!-- import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-import { defineComponent } from 'vue';
-import Unity from '../components/Unity.vue';
-
-export default defineComponent({
-  name: 'Experience',
-  components: {
-    IonContent,
-    IonHeader,
-    IonPage,
-    IonTitle,
-    IonToolbar,
-    Unity
-  }
-}); -->
-<script setup>
-import { onMounted } from 'vue';
-
-const sendMessage = (object, method, param) => {
-  window.gameInstance.SendMessage(object, method, param);
-};
-
-onMounted(() => {
-
-  const file = 'Experience2';
-
-  const script = document.createElement('script');
-  script.onload = () => {
-    /*global createUnityInstance, a*/
-    createUnityInstance(document.querySelector('#unity-canvas'), {
-      dataUrl: `Build/Experience2.data.br`,
-      frameworkUrl: `Build/Experience2.framework.js.br`,
-      codeUrl: `Build/Experience2.wasm.br`,
-      streamingAssetsUrl: 'StreamingAssets',
-      companyName: 'Leonids',
-      productName: "Experience",
-      productVersion: '0.2',
-      // matchWebGLToCanvasSize: false,
-      // Uncomment above to separately control WebGL canvas render size and DOM element size.
-      // devicePixelRatio: 1,
-      // Uncomment above to override low DPI rendering on high DPI displays.
-    }).then((unityInstance) => {
-      // setting this allows the usage of "window.gameInstance" in jslib plugins inside Unity
-      // it also sets up a simple shortcut we can use to provide a path into Unity from vue
-      window.gameInstance = unityInstance;
-    });
-  };
-  script.async = true;
-  script.src = `Build/Experience2.loader.js`;
-  document.head.appendChild(script);
-});
-
-</script>
-
 <style scoped>
-/*#container {
+
+#container {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+@media (max-width: 1750px) {
+  #container {
+    padding-left: 50px;
+  padding-right: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  #container {
+  
+  padding-left: 0px;
+  padding-right: 0px;
+
   text-align: center;
   
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 0;
   transform: translateY(-50%);
+} 
+
+  ion-grid {
+
+  position: fixed;
+  
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.trigger:hover + .text {
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  
-  color: #8c8c8c;
-  
+  display:  none;
   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+
+  
 }
 
-#container a {
-  text-decoration: none;
-}*/
+.trigger + .text {
+  
+  opacity:  100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  transition-property: visibility;
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+  
+  
+}
+
+.trigger:hover { 
+  
+  opacity: 100%;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  
+}
+.trigger { 
+  
+  opacity: 20%;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  
+}
+
 </style>
+
+<script lang="ts">
+
+import { 
+    IonHeader, 
+    IonPage, 
+    IonToolbar, 
+    IonContent
+} from '@ionic/vue';
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: "Experience",
+  components: { 
+    IonHeader, 
+    IonPage, 
+    IonToolbar, 
+    IonContent
+  }
+});
+
+      
+</script>
+
