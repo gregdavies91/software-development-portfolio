@@ -15,12 +15,19 @@
     <ion-content :fullscreen="true">
     
       <div id="container">
-        <strong>Greg Davies</strong>
+        <h1>Greg Davies - Frontend Web Developer</h1>
+        <br>
         <p>This portfolio was made using Ionic Vue 3 and Node.js</p>
-        <ion-icon target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91" name="logo-github"></ion-icon>
-
-        <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">View GitHub Profile</a></p>
-        <p><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/gregdavies91?trk=profile-badge">View LinkedIn Profile</a></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <ion-button fill="clear" color="dark" target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">
+        <ion-icon :icon="logoGithub" size="large"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="dark" target="_blank" rel="noopener noreferrer" href="https://uk.linkedin.com/in/gregdavies91">
+        <ion-icon :icon="logoLinkedin" size="large"></ion-icon>
+        </ion-button>
               
       </div>
 
@@ -30,8 +37,9 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar, IonIcon } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonIcon, IonButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import { logoGithub, logoLinkedin } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'Home',
@@ -40,7 +48,14 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonToolbar,
-    IonIcon
+    IonIcon,
+    IonButton
+  },
+  setup () {
+    return {
+      logoGithub,
+      logoLinkedin
+    }
   }
 });
 </script>
@@ -54,8 +69,8 @@ ion-content {
   text-align: center;
   
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 75px;
+  right: 75px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -68,7 +83,6 @@ ion-content {
 #container p {
   font-size: 16px;
   line-height: 22px;
-  
   color: #8c8c8c;
   
   margin: 0;

@@ -24,6 +24,7 @@
             <div class="text">
               <p style="color: white;">Simplistic Scientists Bootstrap Website
               <br>
+              <br>
               A website made using bootstrap for an online hiphop band. Learned about the basics of using Bootstrap and further perfected HTML and CSS skills.
               </p>
             </div>
@@ -34,6 +35,7 @@
             </div>
             <div class="text">
               <p style="color: white;">X2 International Webflow Website
+              <br>
               <br>
               As Sales Executive, delivered a website made by the team using Webflow to the customer. Learned the basics of HTML, CSS and using tools like Webflow to make websites.
               </p>
@@ -52,17 +54,39 @@
 <style scoped>
 
 #container {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 600px;
+  padding-right: 600px;
 }
 
-@media (max-width: 1750px) {
+@media (max-width: 1875px) {
   #container {
-    padding-left: 50px;
-  padding-right: 50px;
+    padding-left: 500px;
+    padding-right: 500px;
   }
 }
 
+
+@media (max-width: 1000px) {
+  #container {
+  
+  padding-left: 75px;
+  padding-right: 75px;
+
+  text-align: center;
+  
+  position: absolute;
+  left: 0;
+  right: 50px;
+  top: 50px;
+  }
+ 
+
+  ion-grid {
+
+  position: fixed;
+  
+  }
+}
 @media (max-width: 575px) {
   #container {
   
@@ -76,7 +100,8 @@
   right: 0;
   top: 0;
   transform: translateY(-50%);
-} 
+  }
+ 
 
   ion-grid {
 
