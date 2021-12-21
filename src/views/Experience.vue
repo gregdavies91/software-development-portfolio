@@ -22,7 +22,10 @@
               <a target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"><img src="../assets/images/facetothelight.png"></a>
             </div>
             <div class="text">
-            <p style="color: white;">Face To The Light Ltd.</p>
+              <p style="color: white;">Face To The Light Ltd. - Product Owner
+              <br>
+              Overseeing all aspects of landing page creation, from copywriting, to UX/UI, to constant Conversion Rate Optimisation through data-driven A/B tests.
+              </p>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
@@ -30,7 +33,10 @@
               <a target="_blank" rel="noopener noreferrer" href="https://weengs.co.uk"><img src="../assets/images/weengs.png"></a>
             </div>
             <div class="text">
-            <p style="color: white;">Weengs Ltd.</p>
+              <p style="color: white;">Weengs Ltd. - Product Owner
+              <br>
+              Planned and estimated 2-week sprints in a realistic yet time-efficient manner that allowed the teams to deliver 97% of the MVP according to the company roadmap.
+              </p>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
@@ -38,7 +44,11 @@
               <a target="_blank" rel="noopener noreferrer" href="https://techcrunch.com/2015/11/16/vallie-takes-the-luxe-valet-parking-model-and-puts-it-in-london/"><img src="../assets/images/vallie.png"></a>
             </div>
             <div class="text">
-            <p style="color: white;">Vallie Ltd.</p>
+              <p style="color: white;">Vallie Ltd. - Ops Manager
+              <br>
+              Demonstrated their ability to manage a team and achieve results under outstanding pressure.
+              </p>
+            
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
@@ -48,7 +58,7 @@
               
             </div>
             <div class="text">
-            <p style="color: white;">Unlimit Ltd.</p>
+            <p style="color: white;">Unlimit Ltd. - Director</p>
           </div>
             
             
@@ -99,7 +109,7 @@
   }
 }
 
-.trigger:hover + .text {
+.trigger + .text {
 
   display:  none;
   margin: 0;
@@ -112,7 +122,7 @@
   
 }
 
-.trigger + .text {
+.trigger:hover + .text {
   
   opacity:  100%;
   margin: 0;
@@ -124,18 +134,18 @@
   transition-property: visibility;
   transition-delay: 0.2s;
   transition-duration: 1s;
-  
+  display: flex;
   
 }
 
-.trigger:hover { 
+.trigger { 
   
   opacity: 100%;
   transition-property: opacity;
   transition-duration: 0.5s;
   
 }
-.trigger { 
+.trigger:hover { 
   
   opacity: 20%;
   transition-property: opacity;

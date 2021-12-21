@@ -16,11 +16,11 @@
     
       <div id="container">
         <strong>Greg Davies</strong>
-        <p>Software Developer</p>
+        <p>This portfolio was made using Ionic Vue 3 and Node.js</p>
+        <ion-icon target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91" name="logo-github"></ion-icon>
+
         <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91">View GitHub Profile</a></p>
         <p><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/gregdavies91?trk=profile-badge">View LinkedIn Profile</a></p>
-        <!-- <Linkedin>
-        </Linkedin> -->
               
       </div>
 
@@ -30,9 +30,8 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonIcon } from '@ionic/vue';
 import { defineComponent } from 'vue';
-// import Linkedin from '@/components/Linkedin.vue';
 
 export default defineComponent({
   name: 'Home',
@@ -40,10 +39,8 @@ export default defineComponent({
     IonContent,
     IonHeader,
     IonPage,
-    IonToolbar
-    // Linkedin
-    // IonButton,
-    // IonMenuButton
+    IonToolbar,
+    IonIcon
   }
 });
 </script>

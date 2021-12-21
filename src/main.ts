@@ -29,18 +29,6 @@ import VueVirtualScroller from 'vue3-virtual-scroller';
 import 'vue3-virtual-scroller/dist/vue3-virtual-scroller.css';
 import { DynamicScroller } from 'vue3-virtual-scroller';
 
-
-// Font Awesome
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-
-// library.add(faUserSecret)
-
-// Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-// Vue.config.productionTip = false
-
 const app = createApp(App)
   .use(IonicVue)
   .use(router)

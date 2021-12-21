@@ -19,17 +19,24 @@
         <ion-row>
           <ion-col size="12" size-sm>
                 <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"><p>Simplistic Scientists Bootstrap Website</p></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://simplistic.fun"><img src="../assets/images/ss.png"></a>
             </div>   
-          </ion-col>
-          <ion-col size="12" size-sm>
-            <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"><p>X2 International Webflow Website</p></a>
+            <div class="text">
+              <p style="color: white;">Simplistic Scientists Bootstrap Website
+              <br>
+              A website made using bootstrap for an online hiphop band. Learned about the basics of using Bootstrap and further perfected HTML and CSS skills.
+              </p>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
             <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gregdavies91"><img src="../assets/images/landscape.png"><p>Chord Thingy App</p></a>
+              <a target="_blank" rel="noopener noreferrer" href="http://x2international.com"><img src="../assets/images/x2.png"></a>
+            </div>
+            <div class="text">
+              <p style="color: white;">X2 International Webflow Website
+              <br>
+              As Sales Executive, delivered a website made by the team using Webflow to the customer. Learned the basics of HTML, CSS and using tools like Webflow to make websites.
+              </p>
             </div>
           </ion-col>
         </ion-row>
@@ -78,18 +85,22 @@
   }
 }
 
-.trigger p {
+.trigger + .text {
 
+  display:  none;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   visibility: hidden;
+
+  
 }
 
-.trigger:hover p {
+.trigger:hover + .text {
   
+  opacity:  100%;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -99,15 +110,20 @@
   transition-property: visibility;
   transition-delay: 0.2s;
   transition-duration: 1s;
+  display: flex;
+  
 }
 
 .trigger { 
   
+  opacity: 100%;
+  transition-property: opacity;
+  transition-duration: 0.5s;
   
 }
 .trigger:hover { 
-
-  opacity: 50%;
+  
+  opacity: 20%;
   transition-property: opacity;
   transition-duration: 0.5s;
   
