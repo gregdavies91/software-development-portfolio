@@ -24,6 +24,7 @@
             <div class="text">
               <p style="color: white;">Face To The Light Ltd. - Product Owner
               <br>
+              <br>
               Overseeing all aspects of landing page creation, from copywriting, to UX/UI, to constant Conversion Rate Optimisation through data-driven A/B tests.
               </p>
             </div>
@@ -33,18 +34,23 @@
               <a target="_blank" rel="noopener noreferrer" href="https://weengs.co.uk"><img src="../assets/images/weengs.png"></a>
             </div>
             <div class="text">
-              <p style="color: white;">Weengs Ltd. - Product Owner
+              <!-- <p style="color: white;">Weengs Ltd. - Product Owner
+              <br>
               <br>
               Planned and estimated 2-week sprints in a realistic yet time-efficient manner that allowed the teams to deliver 97% of the MVP according to the company roadmap.
-              </p>
+              </p> -->
+              <img src="../assets/images/weengstext.png">
             </div>
           </ion-col>
+        </ion-row>
+        <ion-row>
           <ion-col size="12" size-sm>
             <div class="trigger">
               <a target="_blank" rel="noopener noreferrer" href="https://techcrunch.com/2015/11/16/vallie-takes-the-luxe-valet-parking-model-and-puts-it-in-london/"><img src="../assets/images/vallie.png"></a>
             </div>
             <div class="text">
               <p style="color: white;">Vallie Ltd. - Ops Manager
+              <br>
               <br>
               Demonstrated their ability to manage a team and achieve results under outstanding pressure.
               </p>
@@ -58,7 +64,11 @@
               
             </div>
             <div class="text">
-            <p style="color: white;">Unlimit Ltd. - Director</p>
+            <p style="color: white;">Unlimit Ltd. - Director
+            <br>
+            <br>
+            While holding this Senior post gained relevant marketing experience in an executive role as Director in partnership with the software engineer team.
+            </p>
           </div>
             
             
@@ -76,15 +86,48 @@
 <style scoped>
 
 #container {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 600px;
+  padding-right: 600px;
 }
 
-@media (max-width: 1750px) {
+
+@media (max-width: 1875px) {
   #container {
-    padding-left: 50px;
-  padding-right: 50px;
+  
+  padding-left: 500px;
+  padding-right: 500px;
+
   }
+ 
+}
+
+@media (max-width: 1575px) {
+  #container {
+  
+  padding-left: 300px;
+  padding-right: 300px;
+
+  }
+ 
+}
+
+@media (max-width: 1275px) {
+  #container {
+  
+  padding-left: 100px;
+  padding-right: 100px;
+
+  }
+ 
+}
+@media (max-width: 875px) {
+  #container {
+  
+  padding-left: 35px;
+  padding-right: 35px;
+
+  }
+ 
 }
 
 @media (max-width: 575px) {
@@ -100,7 +143,8 @@
   right: 0;
   top: 0;
   transform: translateY(-50%);
-} 
+  }
+ 
 
   ion-grid {
 
@@ -125,11 +169,7 @@
 .trigger:hover + .text {
   
   opacity:  100%;
-  margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   visibility: visible;
   transition-property: visibility;
   transition-delay: 0.2s;
