@@ -219,11 +219,7 @@ export default defineComponent({
     IonPage, 
     IonToolbar, 
     IonContent
-  },
-  setup() {
-    return {
-      hover: false
-    }
+  
   }
 });
 
