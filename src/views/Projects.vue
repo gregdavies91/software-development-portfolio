@@ -18,27 +18,13 @@
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-sm>
-                <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="https://simplistic.fun"><img src="../assets/images/ss.png"></a>
-            </div>   
-            <div class="text">
-              <p style="color: white;">Simplistic Scientists Bootstrap Website
-              <br>
-              <br>
-              A website made using bootstrap for an online hiphop band. Learned about the basics of using Bootstrap and further perfected HTML and CSS skills.
-              </p>
-            </div>
+            <div class="triggerss">
+              <a class="triggerss" target="_blank" rel="noopener noreferrer" href="https://simplistic.fun"></a>
+            </div> 
           </ion-col>
           <ion-col size="12" size-sm>
-            <div class="trigger">
-              <a target="_blank" rel="noopener noreferrer" href="http://x2international.com"><img src="../assets/images/x2.png"></a>
-            </div>
-            <div class="text">
-              <p style="color: white;">X2 International Webflow Website
-              <br>
-              <br>
-              As Sales Executive, delivered a website made by the team using Webflow to the customer. Learned the basics of HTML, CSS and using tools like Webflow to make websites.
-              </p>
+            <div class="triggerx2">
+              <a class="triggerx2" target="_blank" rel="noopener noreferrer" href="http://x2international.com"></a>
             </div>
           </ion-col>
         </ion-row>
@@ -54,39 +40,34 @@
 <style scoped>
 
 #container {
-  padding-left: 600px;
-  padding-right: 600px;
+  padding-left: 100px;
+  padding-right: 100px;
+
 }
 
-@media (max-width: 1875px) {
-  #container {
-    padding-left: 500px;
-    padding-right: 500px;
-  }
-}
-
-
-@media (max-width: 1000px) {
+@media (max-width: 1075px) {
   #container {
   
-  padding-left: 75px;
-  padding-right: 75px;
-
+  padding-left: 0px;
+  padding-right: 0px;
   text-align: center;
   
   position: absolute;
-  left: 0;
-  right: 50px;
-  top: 50px;
+  left: 50%;
+  right: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
   }
  
 
   ion-grid {
 
-  position: fixed;
+  position: absolute;
   
   }
 }
+
+
 @media (max-width: 575px) {
   #container {
   
@@ -110,49 +91,124 @@
   }
 }
 
-.trigger + .text {
+.triggerss { 
+  
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  background: url('../assets/images/ss.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+    
 
-  display:  none;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: hidden;
+  
+}
+.triggerss:hover { 
+  
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  background: url('../assets/images/sstext.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+    
 
   
 }
 
-.trigger:hover + .text {
+.triggerx2 { 
   
-  opacity:  100%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: visible;
-  transition-property: visibility;
-  transition-delay: 0.2s;
-  transition-duration: 1s;
-  display: flex;
-  
-}
-
-.trigger { 
-  
-  opacity: 100%;
-  transition-property: opacity;
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  transition-property: background-image;
   transition-duration: 0.5s;
+  background-image: url('../assets/images/x2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+
   
 }
-.trigger:hover { 
+.triggerx2:hover { 
   
-  opacity: 20%;
-  transition-property: opacity;
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  transition-property: background-image;
   transition-duration: 0.5s;
+  background-image: url('../assets/images/x2text.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+}
+/*.triggervallie { 
+  
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  transition-property: background-image;
+  transition-duration: 0.5s;
+  background-image: url('../assets/images/weengs.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
   
 }
+.triggervallie:hover { 
+  
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  transition-property: background-image;
+  transition-duration: 0.5s;
+  background-image: url('../assets/images/weengstext.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  
+}
+.triggerunlimit { 
+  
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  transition-property: background-image;
+  transition-duration: 0.5s;
+  background-image: url('../assets/images/weengs.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  
+  
+}
+.triggerunlimit:hover { 
+  
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  transition-property: background-image;
+  transition-duration: 0.5s;
+  background-image: url('../assets/images/weengstext.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  
+}*/
 
 </style>
 
