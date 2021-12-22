@@ -19,24 +19,24 @@
         <ion-row>
           <ion-col size="12" size-sm>
             <div class="triggerfttl">
-              <a class="triggerfttl" target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"></a>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
             <div class="triggerweengs">
-              <a class="triggerweengs" target="_blank" rel="noopener noreferrer" href="https://weengs.co.uk"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://weengs.co.uk"></a>
             </div>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col size="12" size-sm>
             <div class="triggervallie">
-              <a class="triggervallie" target="_blank" rel="noopener noreferrer" href="https://techcrunch.com/2015/11/16/vallie-takes-the-luxe-valet-parking-model-and-puts-it-in-london/"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://techcrunch.com/2015/11/16/vallie-takes-the-luxe-valet-parking-model-and-puts-it-in-london/"></a>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
             <div class="triggerunlimit">
-              <a class="triggerunlimit" target="_blank" rel="noopener noreferrer" href="https://unlimit.co.uk"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://unlimit.co.uk"></a>
             </div>
           </ion-col>
         </ion-row>
@@ -103,122 +103,108 @@
   }
 }
 
-.triggerfttl { 
+.trigger { 
   
-  width: auto;
-  height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/facetothelight.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;
+  
+}
+.trigger:hover { 
+  
+  
+  min-height: 200px;
+  min-width: 340px;
+  display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
+  
+}
 
+.triggerfttl { 
+  
+  margin: 50px;
+  background: url('../assets/images/facetothelight.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;
   
 }
 .triggerfttl:hover { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/fttltext.png');
+  margin: 50px;
+  background: url('../assets/images/fttltext.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
-
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
   
 }
 
 .triggerweengs { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/weengs.png');
+  margin: 50px;
+  background: url('../assets/images/weengs.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;
 
   
 }
 .triggerweengs:hover { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/weengstext.png');
+  margin: 50px;
+  background: url('../assets/images/weengstext.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
 
 }
 .triggervallie { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/vallie.png');
+  margin: 50px;
+  background: url('../assets/images/vallie.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;
   
 }
 .triggervallie:hover { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/vallietext.png');
+  margin: 50px;
+  background: url('../assets/images/vallietext.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
 
   
 }
 .triggerunlimit { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/unlimit.png');
+  margin: 50px;
+  background: url('../assets/images/unlimit.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;
   
   
 }
 .triggerunlimit:hover { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/unlimittext.png');
+  margin: 50px;
+  background: url('../assets/images/unlimittext.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
   
 }
 
@@ -241,6 +227,7 @@ export default defineComponent({
     IonPage, 
     IonToolbar, 
     IonContent
+    
   }
 });
 
