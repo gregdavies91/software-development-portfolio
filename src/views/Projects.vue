@@ -100,10 +100,6 @@
   background: url('../assets/images/ss.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-  -webkit-transition: background 0.5s linear;
-    -moz-transition: background 0.5s linear;
-    -o-transition: background 0.5s linear;
-    transition: background 0.5s linear;
     
 
   
@@ -117,7 +113,6 @@
   background: url('../assets/images/sstext.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-    
 
   
 }
@@ -128,11 +123,8 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/x2.png');
+  background-image: url('../assets/images/x2.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
 
   
@@ -143,72 +135,11 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/x2text.png');
+  background-image: url('../assets/images/x2text.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
 
 }
-/*.triggervallie { 
-  
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/weengs.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: inline-block;
-  
-}
-.triggervallie:hover { 
-  
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/weengstext.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: inline-block;
-
-  
-}
-.triggerunlimit { 
-  
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/weengs.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: inline-block;
-  
-  
-}
-.triggerunlimit:hover { 
-  
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/weengstext.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: inline-block;
-  
-}*/
 
 </style>
 

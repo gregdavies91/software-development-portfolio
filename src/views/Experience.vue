@@ -18,8 +18,8 @@
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-sm>
-            <div class="triggerfttl">
-              <a class="triggerfttl" target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"></a>
+            <div @mouseover="hover = true" @mouseleave="hover = false" :class="{ triggerfttl: hover }">
+              <a class="fttl" target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"></a>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
@@ -103,32 +103,26 @@
   }
 }
 
+.fttl { 
+  
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  background-image: url('../assets/images/facetothelight.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+
+  
+}
 .triggerfttl { 
   
   width: auto;
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/facetothelight.png');
+  background-image: url('../assets/images/fttltext.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: inline-block;
-
-  
-}
-.triggerfttl:hover { 
-  
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/fttltext.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
 
   
@@ -140,11 +134,8 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/weengs.png');
+  background-image: url('../assets/images/weengs.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
 
   
@@ -155,11 +146,8 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/weengstext.png');
+  background-image: url('../assets/images/weengstext.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
 
 }
@@ -169,11 +157,8 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/vallie.png');
+  background-image: url('../assets/images/vallie.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
   
 }
@@ -183,11 +168,8 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/vallietext.png');
+  background-image: url('../assets/images/vallietext.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
 
   
@@ -198,11 +180,8 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/unlimit.png');
+  background-image: url('../assets/images/unlimit.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
   
   
@@ -213,11 +192,8 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  transition-property: background-image;
-  transition-duration: 0.5s;
-  background-image: url('../assets/images/unlimittext.png');
+  background-image: url('../assets/images/unlimittext.png') no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: inline-block;
   
 }
@@ -241,6 +217,11 @@ export default defineComponent({
     IonPage, 
     IonToolbar, 
     IonContent
+  },
+  setup() {
+    return {
+      hover: false
+    }
   }
 });
 
