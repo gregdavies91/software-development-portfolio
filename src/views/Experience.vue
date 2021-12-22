@@ -18,8 +18,8 @@
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-sm>
-            <div @mouseover="hover = true" @mouseleave="hover = false" :class="{ triggerfttl: hover }">
-              <a class="fttl" target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"></a>
+            <div class="triggerfttl">
+              <a class="triggerfttl" target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"></a>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
@@ -103,27 +103,29 @@
   }
 }
 
-.fttl { 
-  
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
-  background-image: url('../assets/images/facetothelight.png') no-repeat;
-  background-size: 100% 100%;
-  display: inline-block;
-
-  
-}
 .triggerfttl { 
   
   width: auto;
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/fttltext.png') no-repeat;
+  background: url('../assets/images/facetothelight.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
+  transition: background 0.25s ease-out;;
+
+  
+}
+.triggerfttl:hover { 
+  
+  width: auto;
+  height: auto;
+  min-height: 200px;
+  min-width: 340px;
+  background: url('../assets/images/fttltext.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  transition: background 0.25s ease-in;
 
   
 }
