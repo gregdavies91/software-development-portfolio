@@ -19,12 +19,12 @@
         <ion-row>
           <ion-col size="12" size-sm>
             <div class="triggerss">
-              <a class="triggerss" target="_blank" rel="noopener noreferrer" href="https://simplistic.fun"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://simplistic.fun"></a>
             </div> 
           </ion-col>
           <ion-col size="12" size-sm>
             <div class="triggerx2">
-              <a class="triggerx2" target="_blank" rel="noopener noreferrer" href="http://x2international.com"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="http://x2international.com"></a>
             </div>
           </ion-col>
         </ion-row>
@@ -90,55 +90,67 @@
   
   }
 }
+.trigger { 
+  
+  min-height: 200px;
+  min-width: 340px;
+  display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;
+  
+}
+.trigger:hover { 
+  
+  
+  min-height: 200px;
+  min-width: 340px;
+  display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
+  
+}
 
 .triggerss { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
+  margin: 50px;
   background: url('../assets/images/ss.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-    
+  transition: scale 0.3s ease-out;
+  scale: 1;  
 
   
 }
 .triggerss:hover { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
+  margin: 50px;
   background: url('../assets/images/sstext.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
   
 }
 
 .triggerx2 { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
+  margin: 50px;
   background: url('../assets/images/x2.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-
+  transition: scale 0.3s ease-out;
+  scale: 1;  
   
 }
 .triggerx2:hover { 
   
-  width: auto;
-  height: auto;
-  min-height: 200px;
-  min-width: 340px;
+  margin: 50px;
   background: url('../assets/images/x2text.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
+  
 }
 
 </style>
