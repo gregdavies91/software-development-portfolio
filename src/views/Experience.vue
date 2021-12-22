@@ -112,7 +112,6 @@
   background: url('../assets/images/facetothelight.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-  transition: background 0.25s ease-out;;
 
   
 }
@@ -125,8 +124,6 @@
   background: url('../assets/images/fttltext.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-  transition: background 0.25s ease-in;
-
   
 }
 
@@ -136,7 +133,7 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/weengs.png') no-repeat;
+  background: url('../assets/images/weengs.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
 
@@ -148,7 +145,7 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/weengstext.png') no-repeat;
+  background: url('../assets/images/weengstext.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
 
@@ -159,7 +156,7 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/vallie.png') no-repeat;
+  background: url('../assets/images/vallie.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
   
@@ -170,7 +167,7 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/vallietext.png') no-repeat;
+  background: url('../assets/images/vallietext.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
 
@@ -182,7 +179,7 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/unlimit.png') no-repeat;
+  background: url('../assets/images/unlimit.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
   
@@ -194,7 +191,7 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/unlimittext.png') no-repeat;
+  background: url('../assets/images/unlimittext.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
   
@@ -219,7 +216,7 @@ export default defineComponent({
     IonPage, 
     IonToolbar, 
     IonContent
-  
+    
   }
 });
 

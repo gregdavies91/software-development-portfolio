@@ -123,7 +123,7 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/x2.png') no-repeat;
+  background: url('../assets/images/x2.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
 
@@ -135,7 +135,7 @@
   height: auto;
   min-height: 200px;
   min-width: 340px;
-  background-image: url('../assets/images/x2text.png') no-repeat;
+  background: url('../assets/images/x2text.png') no-repeat;
   background-size: 100% 100%;
   display: inline-block;
 
