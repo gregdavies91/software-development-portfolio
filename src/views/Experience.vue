@@ -88,7 +88,32 @@
 #container {
   padding-left: 100px;
   padding-right: 100px;
+
+  
 }
+
+@media (max-width: 1075px) {
+  #container {
+  
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  }
+ 
+
+  ion-grid {
+
+  position: absolute;
+  
+  }
+}
+
 
 @media (max-width: 575px) {
   #container {
@@ -130,57 +155,70 @@
 
 .triggerfttl { 
   
-  width: 100%;
+  width: auto;
   height: auto;
+  min-height: 200px;
+  min-width: 340px;
   transition-property: background-image;
   transition-duration: 0.5s;
   background-image: url('../assets/images/weengs.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: inline-block;
+
   
 }
 .triggerfttl:hover { 
   
-  width: 100%;
+  width: auto;
   height: auto;
+  min-height: 200px;
+  min-width: 340px;
   transition-property: background-image;
   transition-duration: 0.5s;
   background-image: url('../assets/images/weengstext.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: inline-block;
+
   
 }
 
 .triggerweengs { 
   
-  width: 100%;
+  width: auto;
   height: auto;
+  min-height: 200px;
+  min-width: 340px;
   transition-property: background-image;
   transition-duration: 0.5s;
   background-image: url('../assets/images/weengs.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: inline-block;
+
   
 }
 .triggerweengs:hover { 
   
-  width: 100%;
+  width: auto;
   height: auto;
+  min-height: 200px;
+  min-width: 340px;
   transition-property: background-image;
   transition-duration: 0.5s;
   background-image: url('../assets/images/weengstext.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: inline-block;
-  
+
 }
 .triggervallie { 
   
-  width: 100%;
+  width: auto;
   height: auto;
+  min-height: 200px;
+  min-width: 340px;
   transition-property: background-image;
   transition-duration: 0.5s;
   background-image: url('../assets/images/weengs.png');
@@ -191,20 +229,25 @@
 }
 .triggervallie:hover { 
   
-  width: 100%;
+  width: auto;
   height: auto;
+  min-height: 200px;
+  min-width: 340px;
   transition-property: background-image;
   transition-duration: 0.5s;
   background-image: url('../assets/images/weengstext.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: inline-block;
+
   
 }
 .triggerunlimit { 
   
-  width: 100%;
+  width: auto;
   height: auto;
+  min-height: 200px;
+  min-width: 340px;
   transition-property: background-image;
   transition-duration: 0.5s;
   background-image: url('../assets/images/weengs.png');
@@ -212,11 +255,14 @@
   background-repeat: no-repeat;
   display: inline-block;
   
+  
 }
 .triggerunlimit:hover { 
   
-  width: 100%;
+  width: auto;
   height: auto;
+  min-height: 200px;
+  min-width: 340px;
   transition-property: background-image;
   transition-duration: 0.5s;
   background-image: url('../assets/images/weengstext.png');
