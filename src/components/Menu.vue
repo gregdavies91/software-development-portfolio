@@ -44,6 +44,11 @@ ion-item {
 
 }
 
+ion-button {
+
+  padding-top: 15px;
+}
+
 
 </style>
 
