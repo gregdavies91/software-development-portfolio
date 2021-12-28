@@ -39,6 +39,22 @@
 
 <style scoped>
 
+#image {
+  margin: 50px;
+}
+
+@media (max-width:  1025px) {
+  #image {
+    margin: 25px;
+  }
+}
+
+@media (max-width:  800px) {
+  #image {
+    margin: 0px;
+  }
+}
+
 #container {
   padding-left: 100px;
   padding-right: 100px;
@@ -53,8 +69,7 @@
 
   left: 0;
   right: 0;
-  top: 0;
-  transform: translateY(-50%);
+  top: 50px;
 
   }
  
@@ -76,7 +91,6 @@
   left: 0;
   right: 0;
   top: 0;
-  transform: translateY(-50%);
   }
  
 
@@ -88,8 +102,8 @@
 }
 .trigger { 
   
-  min-height: 200px;
-  min-width: 340px;
+  width: 340px;
+  height: 200px;
   display: inline-block;
   transition: scale 0.3s ease-out;
   scale: 1;
@@ -97,9 +111,8 @@
 }
 .trigger:hover { 
   
-  
-  min-height: 200px;
-  min-width: 340px;
+  width: 340px;
+  height: 200px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;
@@ -108,20 +121,19 @@
 
 .triggerss { 
   
-  margin: 50px;
-  background: url('../assets/images/ss.png') no-repeat;
-  background-size: 100% 100%;
+  width: 340px;
+  height: 200px;
+  background: url('../assets/images/sssprite.png') no-repeat 0px 0px;
   display: inline-block;
   transition: scale 0.3s ease-out;
-  scale: 1;  
-
+  scale: 1;
   
 }
 .triggerss:hover { 
   
-  margin: 50px;
-  background: url('../assets/images/sstext.png') no-repeat;
-  background-size: 100% 100%;
+  width: 340px;
+  height: 200px;
+  background: url('../assets/images/sssprite.png') no-repeat 0px -200px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;
@@ -130,9 +142,9 @@
 
 .triggerx2 { 
   
-  margin: 50px;
-  background: url('../assets/images/x2.png') no-repeat;
-  background-size: 100% 100%;
+  width: 340px;
+  height: 200px;
+  background: url('../assets/images/x2sprite.png') no-repeat 0px 0px;
   display: inline-block;
   transition: scale 0.3s ease-out;
   scale: 1;  
@@ -140,9 +152,9 @@
 }
 .triggerx2:hover { 
   
-  margin: 50px;
-  background: url('../assets/images/x2text.png') no-repeat;
-  background-size: 100% 100%;
+  width: 340px;
+  height: 200px;
+  background: url('../assets/images/x2sprite.png') no-repeat 0px -200px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;

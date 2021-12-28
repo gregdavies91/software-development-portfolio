@@ -52,6 +52,22 @@ export default defineComponent({
 </script>
 
 <style scoped>
+#image {
+  margin: 50px;
+}
+
+@media (max-width:  1025px) {
+  #image {
+    margin: 25px;
+  }
+}
+
+@media (max-width:  800px) {
+  #image {
+    margin: 0px;
+  }
+}
+
 #container {
   padding-left: 100px;
   padding-right: 100px;
@@ -66,8 +82,7 @@ export default defineComponent({
 
   left: 0;
   right: 0;
-  top: 0;
-  transform: translateY(-50%);
+  top: 50px;
 
   }
  
@@ -89,7 +104,6 @@ export default defineComponent({
   left: 0;
   right: 0;
   top: 0;
-  transform: translateY(-50%);
   }
  
 
@@ -101,8 +115,8 @@ export default defineComponent({
 }
 .trigger { 
   
-  min-height: 400px;
-  min-width: 275px;
+  height: 400px;
+  width: 275px;
   display: inline-block;
   transition: scale 0.3s ease-out;
   scale: 1;
@@ -111,8 +125,8 @@ export default defineComponent({
 .trigger:hover { 
   
   
-  min-height: 400px;
-  min-width: 275px;
+  height: 400px;
+  width: 275px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;
@@ -121,9 +135,9 @@ export default defineComponent({
 
 .trigger1 { 
   
-  margin: 50px;
-  background: url('../assets/images/page1.png') no-repeat;
-  background-size: 100% 100%;
+  height: 400px;
+  width: 275px;
+  background: url('../assets/images/page1sprite.png') no-repeat 0px 0px;
   display: inline-block;
   transition: scale 0.3s ease-out;
   scale: 1;  
@@ -132,9 +146,9 @@ export default defineComponent({
 }
 .trigger1:hover { 
   
-  margin: 50px;
-  background: url('../assets/images/page1download.png') no-repeat;
-  background-size: 100% 100%;
+  height: 400px;
+  width: 275px;
+  background: url('../assets/images/page1sprite.png') no-repeat 0px -400px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;
@@ -143,9 +157,9 @@ export default defineComponent({
 
 .trigger2 { 
   
-  margin: 50px;
-  background: url('../assets/images/page2.png') no-repeat;
-  background-size: 100% 100%;
+  height: 400px;
+  width: 275px;
+  background: url('../assets/images/page2sprite.png') no-repeat 0px 0px;
   display: inline-block;
   transition: scale 0.3s ease-out;
   scale: 1;  
@@ -153,9 +167,9 @@ export default defineComponent({
 }
 .trigger2:hover { 
   
-  margin: 50px;
-  background: url('../assets/images/page2download.png') no-repeat;
-  background-size: 100% 100%;
+  height: 400px;
+  width: 275px;
+  background: url('../assets/images/page2sprite.png') no-repeat 0px -400px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;
