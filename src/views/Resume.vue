@@ -15,7 +15,20 @@
     <ion-content :fullscreen="true">
     
       <div id="container">
-
+        <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-sm>
+            <div class="trigger1">
+              <a class="trigger" href="assets/cv.pdf" download="GregDaviesCVNov2021"></a>
+            </div> 
+          </ion-col>
+          <ion-col size="12" size-sm>
+            <div class="trigger2">
+              <a class="trigger" href="assets/cv.pdf" download="GregDaviesCVNov2021"></a>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
       </div>
 
     </ion-content>
@@ -40,30 +53,116 @@ export default defineComponent({
 
 <style scoped>
 #container {
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+@media (max-width: 1075px) {
+  #container {
+  
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  }
+ 
+
+  ion-grid {
+
+  position: absolute;
+  
+  }
+}
+
+
+@media (max-width: 575px) {
+  #container {
+  
+  padding-left: 0px;
+  padding-right: 0px;
+
   text-align: center;
   
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 0;
   transform: translateY(-50%);
-}
+  }
+ 
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+  ion-grid {
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  position: fixed;
   
-  color: #8c8c8c;
+  }
+}
+.trigger { 
   
-  margin: 0;
+  min-height: 400px;
+  min-width: 275px;
+  display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;
+  
+}
+.trigger:hover { 
+  
+  
+  min-height: 400px;
+  min-width: 275px;
+  display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
+  
 }
 
-#container a {
-  text-decoration: none;
+.trigger1 { 
+  
+  margin: 50px;
+  background: url('../assets/images/page1.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;  
+
+  
+}
+.trigger1:hover { 
+  
+  margin: 50px;
+  background: url('../assets/images/page1download.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
+  
+}
+
+.trigger2 { 
+  
+  margin: 50px;
+  background: url('../assets/images/page2.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;  
+  
+}
+.trigger2:hover { 
+  
+  margin: 50px;
+  background: url('../assets/images/page2download.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
+  
 }
 </style>

@@ -17,11 +17,11 @@
       <div id="formcontainer">
         <h2>Contact</h2>
         <p>Please send me a message and I'll get back to you</p>
-        <form>
+        <form action="https://formsubmit.co/9122e3762ac6d8fd5dc0fe8e6aac9fb3" method="POST">
           <ion-list>
             <ion-item>
               <ion-label>Name: </ion-label> 
-              <ion-input name="name" color="dark" placeholder="Enter your name..." v-model="state.name"></ion-input>
+              <ion-input name="name" type="text" color="dark" placeholder="Enter your name..." v-model="state.name"></ion-input>
             </ion-item>
             
             <ion-item>
@@ -37,7 +37,9 @@
         </ion-list>
         
         <ion-button @click="submitForm" type="submit" expand="block" size="large" color="light">Submit</ion-button>
-        
+        <input type="hidden" name="_subject" value="Portfolio response!">
+        <input type="hidden" name="_next" value="http://test.simplistic.fun">
+        <input type="hidden" name="_captcha" value="false">
         </form>
       </div>
 
@@ -80,13 +82,21 @@ export default defineComponent({
 
     const v$ = useValidate(rules, state)
 
+    // const result = ref(null)
+
+    // axios.get('../views/Contact.vue')
+    //   .then(data => result.value = data);
+
     return {
       state,
-      v$
+      v$,
+      // result
     }
   },
   methods: {
     submitForm() {
+      console.log('Form Values', this.state)
+
       this.v$.$validate()
       if (!this.v$.$error) {
         alert('Form sucessfully submitted. I will get back to you shortly.')
