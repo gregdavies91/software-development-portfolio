@@ -45,18 +45,17 @@
 
 }
 
-@media (max-width: 1075px) {
+@media (max-width: 1275px) {
   #container {
   
-  padding-left: 0px;
-  padding-right: 0px;
-  text-align: center;
-  
-  position: absolute;
-  left: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  left: 0;
   right: 0;
   top: 0;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+
   }
  
 
@@ -68,15 +67,12 @@
 }
 
 
-@media (max-width: 575px) {
+@media (max-width: 675px) {
   #container {
   
   padding-left: 0px;
   padding-right: 0px;
-
-  text-align: center;
   
-  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -86,7 +82,7 @@
 
   ion-grid {
 
-  position: fixed;
+  position: absolute;
   
   }
 }

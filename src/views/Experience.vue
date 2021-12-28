@@ -57,18 +57,17 @@
 
 }
 
-@media (max-width: 1075px) {
+@media (max-width: 1275px) {
   #container {
   
-  padding-left: 0px;
-  padding-right: 0px;
-  text-align: center;
-  
-  position: absolute;
-  left: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  left: 0;
   right: 0;
   top: 0;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+
   }
  
 
@@ -80,15 +79,12 @@
 }
 
 
-@media (max-width: 575px) {
+@media (max-width: 675px) {
   #container {
   
   padding-left: 0px;
   padding-right: 0px;
-
-  text-align: center;
   
-  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -98,15 +94,15 @@
 
   ion-grid {
 
-  position: fixed;
+  position: absolute;
   
   }
 }
 
 .trigger { 
   
-  min-height: 200px;
-  min-width: 340px;
+  width: 340px;
+  height: 200px;
   display: inline-block;
   transition: scale 0.3s ease-out;
   scale: 1;
@@ -114,9 +110,8 @@
 }
 .trigger:hover { 
   
-  
-  min-height: 200px;
-  min-width: 340px;
+  width: 340px;
+  height: 200px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;
@@ -125,9 +120,11 @@
 
 .triggerfttl { 
   
+  width: 340px;
+  height: 200px;
   margin: 50px;
-  background: url('../assets/images/facetothelight.png') no-repeat;
-  background-size: 100% 100%;
+  background: url('../assets/images/fttlsprite.png') no-repeat 0px 0px;
+  /*background-size: 100% 100%;*/
   display: inline-block;
   transition: scale 0.3s ease-out;
   scale: 1;
@@ -135,9 +132,11 @@
 }
 .triggerfttl:hover { 
   
+  width: 340px;
+  height: 200px;
   margin: 50px;
-  background: url('../assets/images/fttltext.png') no-repeat;
-  background-size: 100% 100%;
+  background: url('../assets/images/fttlsprite.png') no-repeat 0px -200px;
+  /*background-size: 100% 100%;*/
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;
@@ -220,6 +219,8 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
+
+
 export default defineComponent({
   name: "Experience",
   components: { 
@@ -229,6 +230,7 @@ export default defineComponent({
     IonContent
     
   }
+
 });
 
       
