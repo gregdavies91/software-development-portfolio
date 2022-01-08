@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
 
 	$mailTo = "gregdaviesmusic@gmail.com";
 	$headers = "From: ".$sender;
-	$txt = "You have received a message from ".$name".\n\n".$message; 
+	$txt = "You have received a message from ".$name.".\n\n".$message; 
 
 	sendMail($mailTo, $headers, $txt);
 	header("Location: ContactForm.vue?mailsend");
