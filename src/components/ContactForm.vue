@@ -3,7 +3,7 @@
 <div id="formcontainer">
         <h2>Contact</h2>
         <p>Please send me a message and I'll get back to you</p>
-        <form action="contactform.php" method="post">
+        <form @submit.prevent="submitForm">
           <ion-list>
 
             <ion-item>
@@ -23,7 +23,7 @@
 
         </ion-list>
         
-        <ion-button @click="submitForm" type="submit" expand="block" size="large" color="light">Submit</ion-button>
+        <ion-button @click="submitForm()" type="submit" expand="block" size="large" color="light">Submit</ion-button>
 
         </form>
   </div>
@@ -79,6 +79,8 @@ import { IonLabel, IonInput, IonTextarea, IonItem, IonList } from '@ionic/vue';
 import { defineComponent, reactive, computed } from 'vue';
 import useValidate from '@vuelidate/core';
 import { required, email, minLength } from '@vuelidate/validators';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
 
 export default defineComponent({
     name: 'ContactForm',
@@ -104,29 +106,31 @@ export default defineComponent({
 
     const v$ = useValidate(rules, state)
 
-    // const result = ref(null)
-
-    // axios.get('../views/Contact.vue')
-    //   .then(data => result.value = data);
-
     return {
       state,
       v$,
-      // result
     }
   },
   methods: {
     submitForm() {
-      console.log('Form Values', this.state)
+      console.log('Form Values', this.state);
 
       this.v$.$validate()
-      if (!this.v$.$error) {
-        alert('Form sucessfully submitted. I will get back to you shortly.')
-      }
-      else {
-        alert('Error! Please fill in all the required fields and click submit again.')
+        if (!this.v$.$error) {
+          alert('Form sucessfully submitted. I will get back to you shortly.');
+          
+
+          axios.post('contactform.php', {
+          name: this.state.name,
+          email: this.state.email,
+          message: this.state.message,
+          })
+          
+        }
+        else {
+          alert('Error! Please fill in all the required fields and click submit again.');
       }    
     }
-  }
+  },
 });
 </script>

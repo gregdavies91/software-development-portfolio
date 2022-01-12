@@ -30,6 +30,7 @@
     "core-js": "^3.6.5",
     "postscribe": "^2.0.8",
     "vue": "^3.2.1",
+    "vue-axios": "^3.4.0",
     "vue-router": "^4.0.0-0",
     "vue-unity-webgl": "^1.2.0",
     "vue3-virtual-scroller": "^0.2.3"
