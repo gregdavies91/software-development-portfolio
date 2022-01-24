@@ -18,14 +18,9 @@
         <ion-grid>
         <ion-row>
           <ion-col size="12" size-sm>
-            <div class="trigger1">
+            <div id="image" class="trigger1">
               <a class="trigger" href="assets/cv.pdf" download="GregDaviesCVNov2021"></a>
             </div> 
-          </ion-col>
-          <ion-col size="12" size-sm>
-            <div class="trigger2">
-              <a class="trigger" href="assets/cv.pdf" download="GregDaviesCVNov2021"></a>
-            </div>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -66,30 +61,30 @@ export default defineComponent({
   #image {
     margin: 0px;
   }
-}
+}  
 
 #container {
-  padding-left: 100px;
-  padding-right: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
 
 }
 
 @media (max-width: 1275px) {
   #container {
   
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
 
   left: 0;
   right: 0;
-  top: 50px;
+  top: 350px;
 
   }
  
 
   ion-grid {
 
-  position: absolute;
+  position: unset;
   
   }
 }
@@ -98,18 +93,18 @@ export default defineComponent({
 @media (max-width: 675px) {
   #container {
   
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
   
   left: 0;
   right: 0;
-  top: 0;
+  top: 350px;
   }
  
 
   ion-grid {
 
-  position: absolute;
+  position: unset;
   
   }
 }
@@ -149,27 +144,6 @@ export default defineComponent({
   height: 400px;
   width: 275px;
   background: url('../assets/images/page1sprite.png') no-repeat 0px -400px;
-  display: inline-block;
-  transition: scale 0.3s ease-in;
-  scale: 1.1;
-  
-}
-
-.trigger2 { 
-  
-  height: 400px;
-  width: 275px;
-  background: url('../assets/images/page2sprite.png') no-repeat 0px 0px;
-  display: inline-block;
-  transition: scale 0.3s ease-out;
-  scale: 1;  
-  
-}
-.trigger2:hover { 
-  
-  height: 400px;
-  width: 275px;
-  background: url('../assets/images/page2sprite.png') no-repeat 0px -400px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;

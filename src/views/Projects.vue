@@ -18,12 +18,12 @@
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-sm>
-            <div class="triggerss">
+            <div id="image" class="triggerss">
               <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://simplistic.fun"></a>
             </div> 
           </ion-col>
           <ion-col size="12" size-sm>
-            <div class="triggerx2">
+            <div id="image" class="triggerx2">
               <a class="trigger" target="_blank" rel="noopener noreferrer" href="http://x2international.com"></a>
             </div>
           </ion-col>
