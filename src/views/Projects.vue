@@ -19,7 +19,7 @@
         <ion-row>
           <ion-col size="12" size-sm>
             <div id="image" class="triggerss">
-              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://simplistic.fun"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://simplisticscientists.com"></a>
             </div> 
           </ion-col>
           <ion-col size="12" size-sm>
