@@ -38,7 +38,7 @@
         
         <ion-button @click="submitForm" type="submit" expand="block" size="large" color="light">Submit</ion-button>
         <input type="hidden" name="_subject" value="Portfolio response!">
-        <input type="hidden" name="_next" value="https://greg.simplistic.fun">
+        <input type="hidden" name="_next" value="https://greg.unlimit.co.uk">
         <input type="hidden" name="_captcha" value="false">
         </form>
       </div>
