@@ -15,7 +15,7 @@
     <ion-content :fullscreen="true">
     
       <div id="container">
-        <h1>Greg Davies - Frontend Web Developer</h1>
+        <h1>Greg Davies - Software Developer</h1>
         <br>
         <p>This portfolio was made using Ionic Vue 3 and Node.js</p>
         <br>
