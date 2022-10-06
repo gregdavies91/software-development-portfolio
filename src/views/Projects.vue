@@ -28,6 +28,18 @@
             </div>
           </ion-col>
         </ion-row>
+        <ion-row>
+          <ion-col size="12" size-sm>
+            <div id="image" class="triggerunlimitchords">
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://chords.unlimit.co.uk"></a>
+            </div>
+          </ion-col>
+          <!-- <ion-col size="12" size-sm>
+            <div id="image" class="triggerunlimit">
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://unlimit.co.uk"></a>
+            </div>
+          </ion-col> -->
+        </ion-row>
       </ion-grid>
     </div>
     </ion-content>
@@ -155,6 +167,27 @@
   width: 340px;
   height: 200px;
   background: url('../assets/images/x2sprite.png') no-repeat 0px -200px;
+  display: inline-block;
+  transition: scale 0.3s ease-in;
+  scale: 1.1;
+  
+}
+
+.triggerunlimitchords { 
+  
+  width: 340px;
+  height: 200px;
+  background: url('../assets/images/unlimitchordssprite.png') no-repeat 0px 0px;
+  display: inline-block;
+  transition: scale 0.3s ease-out;
+  scale: 1;  
+  
+}
+.triggerunlimitchords:hover { 
+  
+  width: 340px;
+  height: 200px;
+  background: url('../assets/images/unlimitchordssprite.png') no-repeat 0px -200px;
   display: inline-block;
   transition: scale 0.3s ease-in;
   scale: 1.1;
