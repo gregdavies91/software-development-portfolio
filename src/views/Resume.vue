@@ -19,7 +19,7 @@
         <ion-row>
           <ion-col size="12" size-sm>
             <div id="image" class="trigger1">
-              <a class="trigger" href="assets/cv.pdf" download="GregDaviesCVNov2021"></a>
+              <a class="trigger" href="assets/cv.pdf" download="GregDaviesCVOct2022"></a>
             </div> 
           </ion-col>
         </ion-row>
