@@ -24,7 +24,7 @@
           </ion-col>
           <ion-col size="12" size-sm>
             <div id="image" class="triggerweengs">
-              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://weengs.co.uk"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="http://weengs.co.uk"></a>
             </div>
           </ion-col>
         </ion-row>
