@@ -19,7 +19,7 @@
         <ion-row>
           <ion-col size="12" size-sm>
             <div id="image" class="triggerfttl">
-              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://facetothelight.com"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="http://facetothelight.com"></a>
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
@@ -36,7 +36,7 @@
           </ion-col>
           <ion-col size="12" size-sm>
             <div id="image" class="triggerunlimit">
-              <a class="trigger" target="_blank" rel="noopener noreferrer" href="https://unlimit.co.uk"></a>
+              <a class="trigger" target="_blank" rel="noopener noreferrer" href="http://unlimit.co.uk"></a>
             </div>
           </ion-col>
         </ion-row>
